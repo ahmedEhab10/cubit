@@ -7,6 +7,6 @@ class CharacterRepo {
 
   Future<List<Character>> GetAllChratater() async {
     final charaters = await characterservice.GetAllChratater();
-    return charaters.map((character) => Character.fromjson(character)).toList();
+    return charaters.map((character) => Character.fromJson(character)).toList();
   }
 }
